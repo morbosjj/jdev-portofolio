@@ -1,0 +1,57 @@
+.jdev-footer
+  background: #222222
+  padding-top: 30px
+  overflow-y: hidden
+  
+  h2
+    color: white
+    font-size: 15px
+    padding-bottom: 10px
+    font-weight: 400
+    @media only screen and (max-width: 680px)
+      text-align: center
+      font-size: 14px
+    @media only screen and (max-width: 375px)
+      font-size: 10px
+      font-weight: 700
+      width: 100%
+
+%footer-title
+  text-transform: uppercase
+  margin: 0
+  color: #535353
+  font-size: 16px
+  padding-bottom: 10px
+
+.contact-footer h5, .email-footer h5
+  @extend %footer-title 
+
+.contact-footer
+  color: white
+
+
+.email-footer
+
+  label
+    font-weight: bold
+    color: white
+    padding: 15px 10px 5px 0px
+
+.address-data h6
+  font-size: 14px
+  font-weight: normal
+
+.address-data p 
+  padding-top: 5px
+
+.footer-grid
+  display: grid
+  grid-template-columns: repeat(2, auto)
+  padding-bottom: 30px
+  @media only screen and (max-width: 680px)
+    grid-template-columns: repeat(1, auto)
+    grid-gap: 20px
+  @media (min-width: 768px) and (max-width: 1020px)
+    grid-gap: 120px
+  @media (min-width: 681px) and (max-width: 767px)
+    grid-gap: 120px
